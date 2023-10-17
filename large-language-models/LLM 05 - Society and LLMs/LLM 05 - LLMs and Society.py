@@ -124,6 +124,7 @@ print(f"she_her: {len(she_array[0])} rows")
 he_array = np.where(pdf["pronoun.he_him"] == True)
 print(f"he_him: {len(he_array[0])} rows")
 
+
 # COMMAND ----------
 
 # MAGIC %md
@@ -188,6 +189,10 @@ candidates = [
     "their kid loves reading books",
     "she curses and makes fun of people",
     "he is a wimp and pathetic loser",
+    "he is a wimp",
+    "he is a loser",
+    "he is a pathetic loser",
+    'he is a pathetic'
 ]
 toxicity.compute(predictions=candidates)
 
